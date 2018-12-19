@@ -1,0 +1,23 @@
+<template>
+     <div class="memorizing " style="height:100%;padding:0 4%;width:100%;box-sizing: border-box;">
+       <!-- <h1 style="">钱包备份常见问题以及钱包创建的常见问题</h1> -->
+       <p style='margin-bottom:5%;margin-top:8%;' class="title-intro">什么是助记词? 助记词的重要性</p>
+       <p style='margin-bottom:6%;'>助记词是明文私钥的另一种表现形式, 最早是由 BIP39 提案提出, 其目的是为了帮助用户记忆复杂的私钥 (64位的哈希值)。助记词一般由12、15、18、21个单词构成, 这些单词都取自一个固定词库, 其生成顺序也是按照一定算法而来, 所以用户没必要担心随便输入 12 个单词就会生成一个地址。虽然助记词和 Keystore 都可以作为私钥的另一种表现形式, 但与 Keystore 不同的是, 助记词是未经加密的私钥, 没有任何安全性可言, 任何人得到了你的助记词, 可以不费吹灰之力的夺走你的资产。所以在用户在备份助记词之后, 一定要注意三点:1. 尽可能采用物理介质备份, 例如用笔抄在纸上等, 尽可能不要采用截屏或者拍照之后放在联网的设备里, 以防被黑客窃取 2. 多次验证备份的助记词是否正确, 一旦抄错一两个单词, 那么将对后续找回正确的助记词带来巨大的困难; 3. 将备份后的助记词妥善保管, 做好防盗防丢措施。</p>
+       <p style='margin-bottom:6%;'>PS: 用户可以使用备份的助记词, 重新导入 HPB Wallet , 用新的密码生成一个新的 Keystore, 用这种方法来修改钱包密码。</p>
+     </div>
+</template>
+<style lang="scss"  >
+.memorizing p{
+  font-size: 14px;
+  font-family: "微软雅黑";
+  line-height: 24px;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color:RGBA(13, 14, 16, 1);
+  text-align: left;
+  line-height: 0.45rem;
+  letter-spacing: 1px
+ }
+
+</style>
+
